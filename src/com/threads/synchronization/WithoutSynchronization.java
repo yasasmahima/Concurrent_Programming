@@ -1,4 +1,4 @@
-package com.threads;
+package com.threads.synchronization;
 
 /**
  * output is inconsistent. Both Threads are run in same time.
