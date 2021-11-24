@@ -15,7 +15,7 @@ class MainThread extends Thread {
     }
 }
 
-
+//Best Pracice
 class MainRunnable implements Runnable {
     public void run() {
         try {

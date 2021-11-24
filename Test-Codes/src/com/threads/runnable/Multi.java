@@ -8,6 +8,9 @@ class Multi implements Runnable{
     public static void main(String args[]){
         Multi m1=new Multi();
         Thread t1 =new Thread(m1);
+        System.out.println(t1.isAlive());
         t1.start();
+        System.out.println(t1.getState());
+
     }
 }
