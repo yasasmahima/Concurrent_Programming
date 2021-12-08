@@ -43,7 +43,7 @@ public class Sharing {
          */
         Reader reader1 = new Reader("Reader-1",variable1,variable2,5);
         Thread reader1Thread = new Thread(reader1);
-        reader1.start();
+        reader1Thread.start();
 
         Writer writer1 = new Writer("Writer-1", variable1,variable2, 0, 5);
         Thread writer1Thread = new Thread(writer1);
