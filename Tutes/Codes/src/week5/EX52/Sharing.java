@@ -17,11 +17,8 @@ public class Sharing {
         /**
          * Asnwers for Ex - 5.6 and 5.7 Todo - Uncomment to check (Have to update the Writer and Reader class as well)
          */
-//        Reader reader1 = new Reader("Reader-1",variable1,10);
-//        Thread reader1Thread = new Thread(reader1);
-//
-//        Writer writer1 = new Writer("Writer-1",variable1,0,10);
-//        Thread writer1Thread = new Thread(writer1);
+//        Reader reader1Thread = new Reader("Reader-1",variable1,10);
+//        Writer writer1Thread = new Writer("Writer-1",variable1,0,10);
 //
 //        writer1Thread.start();
 //        reader1Thread.start();
@@ -29,11 +26,8 @@ public class Sharing {
         /**
          * Answers for Ex - 5.7 Todo- Uncomment to check (Have to update the Writer and Reader class as well)
          */
-//        Reader reader2 = new Reader("Reader-2",variable1,10);
-//        Thread reader2Thread = new Thread(reader2);
-//
-//        Writer writer2 = new Writer("Writer-2",variable1,10,20);
-//        Thread writer2Thread = new Thread(writer2);
+//        Reader reader2Thread = new Reader("Reader-2",variable1,10);
+//        Writer writer2Thread = new Writer("Writer-2",variable1,10,20);
 //
 //        writer2Thread.start();
 //        reader2Thread.start();
@@ -41,20 +35,16 @@ public class Sharing {
         /**
          * Answers for Ex - 5.8
          */
-        Reader reader1 = new Reader("Reader-1",variable1,variable2,5);
-        Thread reader1Thread = new Thread(reader1);
+        Reader reader1Thread = new Reader("Reader-1",variable1,variable2,5);
         reader1Thread.start();
 
-        Writer writer1 = new Writer("Writer-1", variable1,variable2, 0, 5);
-        Thread writer1Thread = new Thread(writer1);
+        Writer writer1Thread = new Writer("Writer-1", variable1,variable2, 0, 5);
         writer1Thread.start();
 
-        Reader reader2 = new Reader("Reader-2",variable1,variable2,5);
-        Thread reader2Thread = new Thread(reader2);
+        Reader reader2Thread = new Reader("Reader-2",variable1,variable2,5);
         reader2Thread.start();
 
-        Writer writer2 = new Writer("Writer-2", variable1,variable2, 5, 10);
-        Thread writer2Thread = new Thread(writer2);
+        Writer writer2Thread = new Writer("Writer-2", variable1,variable2, 5, 10);
         writer2Thread.start();
 
     }
